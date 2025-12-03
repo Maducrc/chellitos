@@ -1,0 +1,42 @@
+{
+  "sabores": [
+    "Cheddar",
+    "Bacon",
+    "Queijo Parmesão",
+    "Cebola & Salsa",
+    "Churrasco",
+    "Picante Mexicano",
+    "Limão",
+    "Frango Grelhado",
+    "Pimenta Jalapeño",
+    "Wasabi"
+  ],
+  "texturas": [
+    "Crocante",
+    "Ondulada",
+    "Extra crocante",
+    "Puff",
+    "Aeração leve",
+    "Macia por dentro"
+  ],
+  "formatos": [
+    "Triangular",
+    "Redondo",
+    "Ondinha",
+    "Palito",
+    "Tubinho",
+    "Estrela",
+    "Conchinha"
+  ],
+  "cores": [
+    "Amarelo",
+    "Laranja",
+    "Vermelho",
+    "Verde",
+    "Roxo",
+    "Azul",
+    "Dourado",
+    "Preto",
+    "Branco"
+  ]
+}
