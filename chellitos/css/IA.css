@@ -1,0 +1,186 @@
+.container {
+    padding-top: 90px; 
+    background: #fff;
+}
+
+html {
+    background: #fff;
+}
+
+.IA {
+    height: auto;
+    padding: 20px;
+    background-color: #800115;
+    box-shadow: 5px 5px 5px 5px #fddada;
+    border-radius: 30px;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.txt {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.titulo {
+    color: #800115;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.subtitulo1 {
+    margin-top: -5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.subtitulo2 {
+    color: #fff8e7;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    border-radius: 50px;
+    border: 1px solid #800115;
+    background-color: #5f000e;
+    padding-right: 25px;
+    padding-left: 25px;
+    caret-color: #fff8e7;
+}
+
+input::placeholder {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: #fff8e7;
+    opacity: 0.5;
+}
+
+input:focus {
+    border: 2px solid #4f000c;
+    background-color: #4f000c;
+    outline: none;
+}
+
+.input-container {
+    justify-content: center;
+    position:relative;
+    margin-top: 30px;
+}
+
+.input-group > .form-control {
+    height: 40px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding-right: 50px;
+}
+
+.input-group > .form-control:not(:last-child) {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+#gerarSabor {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    width: 30px;
+    height: 30px;
+    color: #ffdee3;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 0;
+}
+
+pre {
+    text-align: left;
+    padding: 20px 30px;
+    border-radius: 30px;
+    position: relative;
+    min-height: 50px;
+    white-space:inherit;
+    word-wrap: break-word;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    font-size: 14px;
+}
+
+pre strong {
+    display: block; 
+    margin-top: 15px; 
+    margin-bottom: 5px; 
+    color: #fff; 
+    font-size: 16px;
+    border-bottom: 1px solid #ccc; 
+    padding-bottom: 3px;
+    font-weight: 700;
+}
+
+.loader {
+    display: none;
+    width: 100px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader.show {
+    display: flex;
+}
+
+.loader span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ffdee3;
+    margin: 0 3px;
+    animation: loading .6s infinite ease-in-out;
+}
+
+@keyframes loading {
+    0%,
+    80%,
+    100% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+}
+
+span:nth-child(2) {
+    animation-delay: .12s;
+}
+
+span:nth-child(3) {
+    animation-delay: .24s;
+}
+
+.error {
+    font-family: "Montserrat", sans-serif;
+    color: #fff8e7;
+    text-align: center;
+}
+
+/*Alterando estilo do input no preenchimento automático*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+    
+    -webkit-text-fill-color: #fff8e7 !important;
+    -webkit-box-shadow: 0 0 0px 1000px #4f000c inset !important;
+    
+    caret-color: #fff8e7 !important;
+}
