@@ -1,0 +1,66 @@
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    padding-top: 150px;
+}
+
+.title1{
+    font-size: 50px;
+    color: #57000d;
+    font-weight: 700;
+}
+
+.title2 {
+    font-size: 50px;
+    color: #800115;
+    font-weight: 700;
+    margin-top: -20px;
+}
+
+.txt {
+    font-size: 17px;
+    color: #000;
+    text-align:justify;
+    font-weight: 500;
+}
+
+.hr {
+    border: none;
+    height: 1px;
+    margin: 15px 0;
+    /* Usa um degradê linear transparente/cor/transparente */
+    background-image: linear-gradient(
+        to right,
+        rgba(122, 0, 0, 0), /* Início transparente */
+        rgb(122, 0, 4), /* Meio com 40% de opacidade */
+        rgba(122, 0, 0, 0) /* Fim transparente */
+    );
+}
+
+.favs, .qll {
+    width: 50px;
+    height: 50px;
+        
+    background-color: #800115; 
+    border: 1px solid #800115;
+    border-radius: 10px; 
+        
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 20px;
+}
+ 
+.favs, .qll i {
+    font-size: 20px; 
+    color: #ffffff;
+}
+
+.texto-lateral {
+    margin-top: -35px;
+    margin-left: 60px;
+    font-size: 15px;
+}
+
