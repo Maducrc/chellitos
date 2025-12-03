@@ -1,0 +1,95 @@
+header {
+    background: #800115; 
+    box-shadow: 0 5px 10px rgba(255, 120, 120, 0.5);
+    width: 100%;
+    position: fixed; /* Mantém o header fixo no topo */
+    z-index: 1000;
+    min-height: 90px; /* Garante a altura mínima do header */
+}
+
+nav {
+    display: flex; /* Habilita o alinhamento Flexbox */
+    justify-content: space-between; /* Espaça a logo e o menu */
+    align-items: center; /* Centraliza itens verticalmente */
+    max-width: 1400px;
+    margin: 50 0;
+    padding: 5px 0px; /* Ajuste para o espaçamento interno */
+    height: 90px; /* Define a altura total do nav */
+}
+
+/* --- 2. Estilo da Logo --- */
+.logoChellitos .logo {
+    height: auto; /* Ajusta o tamanho da logo para caber nos 90px */
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left: 0px;
+}
+
+.navbar-nav .nav-link {
+    background-color:#800115;
+    color: #fff8e7 !important;
+    font-size: 1em;
+    padding: 8px 20px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 20px;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    background: #E64A19; 
+    color: #fff8e7 !important; 
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+
+
+.icons #icon1, .icons #icon2, 
+.d-flex i { /* Incluindo o seletor d-flex i que você usou no HTML adaptado */
+    color: #fff8e7;
+    cursor: pointer;
+}
+
+.icons {
+    display: flex;
+    gap: 25px; /* Espaço entre os ícones */
+}
+
+@media (max-width: 991.98px) {
+    
+    /* Garante que os links de navegação preencham a largura no menu recolhido */
+    .navbar-nav {
+        margin-top: 10px; /* Espaço entre a logo e o menu */
+    }
+
+    /* Ajusta o padding e espaçamento vertical dos itens do menu no celular */
+    .navbar-nav .nav-item {
+        margin-right: 0;
+        margin-bottom: 5px; /* Adiciona espaçamento vertical entre os itens */
+    }
+
+    .navbar-nav .nav-link {
+        text-align: center; /* Centraliza o texto no modo hamburguer */
+        padding: 10px 0;
+    }
+    
+    /* Estiliza os ícones no menu hamburguer para que fiquem alinhados ou centralizados */
+    .d-flex.align-items-center {
+        justify-content: center !important; /* Centraliza os ícones */
+        padding: 15px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.2); /* Linha divisória */
+    }
+
+    .d-flex i {
+        /* Garante que os ícones tenham o espaçamento correto no celular */
+        margin: 0 10px; 
+    }
+}
+
